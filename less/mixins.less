@@ -1,15 +1,18 @@
 // Mixins in here
-.custom-btn(@width: 200px, @bgColor:@button-bg, @fontColor:@white ) {
-    padding: 14px 46px;
+.custom-btn(@width: 200px, @bgColor:@button-bg, @fontColor:@main-bg ) {
+    padding: 1.4rem 4.6rem;
     cursor: pointer;
-    height: 45px;
+    height: 4.5rem;
     font-size: 2rem;
-    border-radius: 16px;
+    border-radius: 1.6rem;
     width: @width;
     background-color: @bgColor;
     color: @fontColor
-    }
-    &:hover {
-      background-color: @fontColor;
-      color: @bgColor;
-    }
+
+    /*&:hover {
+        background-color:@white;
+        color: @button-bg;
+    }*/
+}
+    
+   

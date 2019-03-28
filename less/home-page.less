@@ -7,7 +7,12 @@ header {
   border-bottom: 2px dashed @navigation-border;
   margin: auto;
   padding: 2.5rem 10rem;
+
+  @media @mobile {
+    flex-direction:column;
   }
+  }
+
 
 .home {
 
@@ -23,7 +28,7 @@ header {
   } 
 
   .content-section {
-    margin: 30px 0;
+    margin: 3rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -40,13 +45,13 @@ header {
       padding-left: 1%;
 
       img {
-        border-radius: 10px;
+        border-radius: 1rem;
       }
     }
   }
 
   .inverse-content {
-    padding-bottom: 30px;
+    padding-bottom: 3rem;
     border-bottom: 2px dashed @navigation-border;
 
     .text-content {
@@ -62,7 +67,7 @@ header {
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 0 auto 3rem;
 
     img {
       border-radius: 10px;
@@ -70,14 +75,19 @@ header {
   }
 
   .content-pick {
-    padding-top: 30px;
+    padding-top: 3rem;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+    }
     .destination {
       width: 30%;
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
     }
 
     .btn {
