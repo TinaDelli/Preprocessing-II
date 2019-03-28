@@ -10,6 +10,7 @@ header {
 
   @media @mobile {
     flex-direction:column;
+    padding: 0 0;
   }
   }
 
@@ -18,6 +19,11 @@ header {
 
   .top-content {
     border-bottom:2px dashed @navigation-border;
+
+    @media @mobile {
+      width:90%;
+      margin:auto;
+    }
 
     h2 {
       margin-top:2rem;
@@ -33,16 +39,29 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+   @media @mobile {
+     flex-direction:column;
+     justify-content:center;
+     align-items:center;
+   }
+
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 90%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width:90%;
+      }
 
       img {
         border-radius: 1rem;
@@ -53,6 +72,10 @@ header {
   .inverse-content {
     padding-bottom: 3rem;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -68,6 +91,10 @@ header {
   .content-destination {
     width: 75%;
     margin: 0 auto 3rem;
+  
+    @media @mobile {
+      width:90%;
+    }
 
     img {
       border-radius: 10px;
@@ -88,10 +115,23 @@ header {
     .destination {
       width: 30%;
       margin-bottom: 3rem;
+
+      @media @mobile {
+        width:75%;
+      }
     }
 
     .btn {
       .custom-btn();  
+
+      @media @mobile {
+        width: 350px;
+        padding: 1.4rem 127px; 
+      }
+      &:hover {
+        background-color:@white;
+        color: @button-bg;
+      }
     }
   }
 }// home
